@@ -1,0 +1,12 @@
+
+#load{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    border: 12px solid #f3f3f3 ;
+    border-top: 12px solid #444 ;
+    transform: translate(-50%, -50%);
+  }
