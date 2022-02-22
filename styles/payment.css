@@ -7,9 +7,12 @@
     height: 20%;
     width: 50%;
     background-color:rgb(132,136,139);
-   margin: 2% auto 2% auto;
+    margin: 2% auto 2% auto;
    
     
+}
+#bodyArea{
+    padding-bottom: 5%;
 }
 #CusDetail{
  margin: 2%;
@@ -20,4 +23,8 @@
     border-radius: 5px;
     padding: 1% 2%;
    
+}
+#pay a{
+    text-decoration: none;
+    color: black;
 }

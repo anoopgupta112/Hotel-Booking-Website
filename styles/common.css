@@ -1,3 +1,6 @@
+*{
+    font-family: 'Ubuntu', sans-serif;
+}
 body{
    background-color: #e0e0e0;
    margin: 0;
@@ -5,20 +8,62 @@ body{
 }
 header{
     background-color: rosybrown;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
 }
 footer{
+    
     background-color: rosybrown;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+.UpperFoot{
+    display: flex;
+    justify-content: space-between;
 }
 header img {
     height: 150px;
     width: 200px;
 }
 
+header a{
+  text-decoration: none;
+  display: flex;
+  margin-right: 2%;
+  align-items: center;
+  color: black;
+  }
+
 #socialMedia {
     width: 22px;
     height: 20px;
+    float: right;
 }
 #logo{
     height: 60px;
     width: 60px;
+}
+#copyRight{
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  
+}
+.contact a{
+    text-decoration: none;
+    color: black;
+}
+.contact{
+    height: 2rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+   
 }

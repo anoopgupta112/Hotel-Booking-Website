@@ -1,13 +1,40 @@
 .Imgs{
-
-width: 40%;
+width: 40vw;
 background-color:  rgb(132,136,139);
 margin: 2%;
-}
 
+}
+tab{
+    display: flex;
+    justify-content: center;
+    
+}
+tab a{
+    text-decoration: none;
+    color: black;
+    margin: 2%;
+
+    
+}
 #main img{
-   
+  
     width: 250px;
     height: 200px;
    
+}
+#main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    grid-row-gap: 1rem;
+    padding-bottom: 5%;
+  
+    
+}
+#mapView{
+    display: none;
+}
+.Imgs a{
+    text-decoration: none;
+    color: black;
 }
