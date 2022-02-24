@@ -1,6 +1,7 @@
 .Imgs{
 width: 40vw;
-background-color:  rgb(132,136,139);
+height: 200px;
+background-color:  rgba(132, 136, 139, 0.2);
 margin: 2%;
 
 }
@@ -37,4 +38,12 @@ tab a{
 .Imgs a{
     text-decoration: none;
     color: black;
+}
+.textRight{
+   
+    display: flex;
+   
+}
+.textRight div{
+    margin-right: 5%;
 }

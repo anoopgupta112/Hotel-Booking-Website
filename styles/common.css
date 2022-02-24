@@ -13,21 +13,20 @@ header{
     top: 0;
     left: 0;
     right: 0;
+    z-index: 1;
     justify-content: space-between;
 }
 footer{
-    
+    display: flex;
+    justify-content: space-between;
     background-color: rosybrown;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     left: 0;
     right: 0;
     
 }
-.UpperFoot{
-    display: flex;
-    justify-content: space-between;
-}
+
 header img {
     height: 150px;
     width: 200px;
@@ -44,7 +43,7 @@ header a{
 #socialMedia {
     width: 22px;
     height: 20px;
-    float: right;
+    /* float: right; */
 }
 #logo{
     height: 60px;
@@ -52,9 +51,9 @@ header a{
 }
 #copyRight{
   font-size: 10px;
-  display: flex;
-  justify-content: center;
+  margin-top: 1rem;
   
+ 
 }
 .contact a{
     text-decoration: none;
@@ -63,7 +62,7 @@ header a{
 .contact{
     height: 2rem;
     margin-top: 1rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left:2rem;
+    margin-right: 2rem;
    
 }
