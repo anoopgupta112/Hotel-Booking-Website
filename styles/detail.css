@@ -22,15 +22,15 @@
   
    padding: 0.5rem ;
 }
-form div{
+#form div{
    display: flex;
-   margin-top: 6%;
+   margin-top: 3%;
   justify-content: space-around;
   margin-left: 3%;
    
    
 }
-form{
+#form{
    width: 25vw;
    height: 370px;
    position: relative;
@@ -47,9 +47,9 @@ form{
 #ToDate{
   width: 55vw;
 }
-form div label{
-   margin-right: 12%;
-   width: 30vw;
+#form div label{
+
+   width: 27vw;
  
 }
 #bookNow{
@@ -58,11 +58,20 @@ form div label{
    margin-top: 5%;
    height: 30px;
    margin-left: 12%;
+  
 }
 h5, h2 {
    font-family: cursive;
  
 }
 
-
+.success {
+   border-color: #04AA6D;
+   color: green;
+ }
+ 
+ .success:hover {
+   background-color: #04AA6D;
+   color: white;
+ }
 
