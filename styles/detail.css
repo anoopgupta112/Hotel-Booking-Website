@@ -1,56 +1,50 @@
-#mainImg{
-   height: 350px; width: 500px;
+.a{
+   margin-top: 1%;
+   margin-left: 1%;
+   max-height: 350px;  
 }
+.carousel-inner{
+ margin-right: 30%;
+}
+
 #cont{
-   margin: 2% 4% auto 4%;
    padding-bottom: 5%;
-  
- 
- 
+   padding-top: 7%;
+}
+#carouselExampleControls{
+   height: 370px;  
 }
 #covering{
    display: grid;
+   justify-content: center;
+   align-content: center;
+  gap: 4px;
+   grid-auto-flow: column;
    grid-template-columns: 3fr 1fr;
    border: 1px solid black;
+   box-sizing: border-box;
    height: 370px;
-  
-   
 }
-#covering div{
-   display: flex;
-   justify-content: center;
-  
-   padding: 0.5rem ;
-}
+
 #form div{
    display: flex;
-   margin-top: 3%;
-  justify-content: space-around;
-  margin-left: 3%;
-   
-   
+   padding-top: 8%;
+ justify-content: space-around;
+ padding-left: 5%;
+ padding-right: 5%;
 }
 #form{
    width: 25vw;
    height: 370px;
    position: relative;
-  
-   top: -2%;
    border-left: 1px solid black;
-  
-
-
-
- 
 }
 #FromDate,
 #ToDate{
   width: 55vw;
 }
 #form div label{
-
-   width: 27vw;
- 
+ width: 27vw;
 }
 #bookNow{
    display: flex;
@@ -58,11 +52,9 @@
    margin-top: 5%;
    height: 30px;
    margin-left: 12%;
-  
 }
-h5, h2 {
+h5, h2,h4 {
    font-family: cursive;
- 
 }
 
 .success {
@@ -74,4 +66,48 @@ h5, h2 {
    background-color: #04AA6D;
    color: white;
  }
+ h2{
+    margin-top: 2%;
+ }
+ .ourForm{
+    display: none;
+ }
 
+ @media only screen and (max-width: 768px) and (min-width: 6px){
+   #covering{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-content: center;
+      border: 1px solid black;
+      height: 370px;
+     
+      
+   }
+   .ourForm{
+      display: block;
+      
+   }
+   #FromDate,
+#ToDate{
+  width: auto;
+}
+ 
+   #form{
+     display: none;
+    
+   }
+   #cont{
+      padding-bottom: 15%;
+      padding-top: 17%;
+   }
+  
+   #bookNow{
+      display: flex;
+      justify-content: center;
+      margin-top: 5%;
+      height: 30px;
+      margin-left: 12%;
+     
+   }
+ }

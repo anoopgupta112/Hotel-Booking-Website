@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!-- bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- for font  -->
@@ -24,17 +27,18 @@
                 LOGIN
             </button>
         </header>
-        <content>
+        <div class="container-fluid" id="cont">
             <div>
                 <tab>
                     <ul class="nav nav-pills mb-4" id="pills-tab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="list-tab" data-toggle="pill" href="#main"
-                                aria-controls="main" aria-selected="true">List</a>
+                            <a class="nav-link active mx-2" id="list-tab" data-toggle="pill" href="#main"
+                                aria-controls="main" aria-selected="true"> List View</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="map-tab" data-toggle="pill" href="#mapView" aria-controls="mapView"
-                                aria-selected="false">Map</a>
+
+                            <a type="button" class="nav-link mx-2" id="map-tab" data-toggle="pill" href="#mapView"
+                                aria-controls="mapView" aria-selected="false">Map View</a>
                         </li>
 
                     </ul>
@@ -43,17 +47,22 @@
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="main" role="tabpanel" aria-labelledby="list-tab">
 
-                    <div class="Imgs">
+                    <div class="Imgs ">
 
                         <a href="detail.html">
-                            <div class="textRight">
+                            <div class="textRight ">
                                 <div>
                                     <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                                        alt="">
+                                        class="img-fluid" alt="">
                                 </div>
-                                <div>
+                                <div class="dataOfHotel">
                                     <h3>Radisson Blu Hotel</h3>
-                                    <p>5 Star</p>
+                                    <p><span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                    </p>
                                     <p> New Delhi </p>
                                 </div>
                             </div>
@@ -65,11 +74,17 @@
                         <div class="textRight">
                             <div>
                                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                                    alt="">
+                                    class="img-fluid" alt="">
                             </div>
-                            <div>
+                            <div class="dataOfHotel">
                                 <h3>The Lalit New Delhi</h3>
-                                <p> 4.5 Star</p>
+                                <p> <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star-half-full checked"></span>
+                                    <span class="fa fa-star"></span>
+
+                                </p>
                                 <p> New Delhi </p>
                             </div>
                         </div>
@@ -78,24 +93,31 @@
                         <div class="textRight">
                             <div>
                                 <img src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                                    alt="">
+                                    class="img-fluid lastImg" alt="">
                             </div>
-                            <div>
+                            <div class="dataOfHotel">
                                 <h3>Taj Palace</h3>
-                                <p> 4.0 Star</p>
+                                <p><span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star checked"></span>
+                                    <span class="fa fa-star"></span>
+                                </p>
                                 <p> New Delhi </p>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
                 <div class="tab-pane fade" id="mapView" role="tabpanel" aria-labelledby="map-tab">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="">
+                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" class="img-fluid"
+                        alt="">
 
                 </div>
 
             </div>
-        </content>
+        </div>
         <footer>
 
             <div class="contact">
@@ -190,10 +212,10 @@
                 </form>
             </div>
         </div>
-        <!-- bootstrap js  -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </body>
+<!-- bootstrap js  -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </html>

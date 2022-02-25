@@ -10,7 +10,7 @@ body{
 header{
     background-color: rosybrown;
     display: flex;
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -21,18 +21,15 @@ footer{
     display: flex;
     justify-content: space-between;
     background-color: rosybrown;
-    position: sticky;
-    bottom: 0;
+    position: fixed;
+    bottom: 0rem;
     left: 0;
     right: 0;
    
     
 }
 
-header img {
-    height: 150px;
-    width: 200px;
-}
+
 
 header a{
   text-decoration: none;
@@ -45,14 +42,14 @@ header a{
 #socialMedia {
     width: 22px;
     height: 20px;
-    /* float: right; */
+   margin-right: 2%;
 }
 #logo{
     height: 60px;
     width: 60px;
 }
 #copyRight{
-  font-size: 10px;
+  font-size: 0.7rem;
   margin-top: 1rem;
   
  
@@ -63,4 +60,19 @@ header a{
     
    
 }
+.checked {
+    color: orange;
+  }
 
+    /* media query  for small*/
+@media only screen and (max-width: 600px) {
+   
+    #sign-in-button{
+      height: 2rem;
+      display: flex;
+      align-items: center;
+    }
+    
+   
+   
+  }
