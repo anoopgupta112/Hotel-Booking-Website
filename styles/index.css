@@ -23,62 +23,132 @@
     border-radius: 12px;
 }
 
-
 #cityImg{
-   
-
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     padding: 4%;
+    
    }
 
-
-
-   #cityImg img{
-   
+#cityImg img{
     height: 150px;
     width: 150px;
     border-radius: 25%;
-    box-shadow: 10px 10px 10px gray;
-  
+    box-shadow: 10px 10px 10px gray; 
 }
 
 #viewMore{
     text-align: center;
-    padding-bottom: 5%;
-   
+    padding-bottom: 5%; 
 }
 #viewMore a{
     text-decoration: none;
     color: black;
 }
 /* hover property */
-#cityImg img:hover{
-    
-    opacity: 0.8;
-}
-#cityImg img:hover + p{
-opacity: 1;
-
-
+.ImgLocation:hover,.ImgLocationA:hover{
+  opacity: 1;
 }
 
-#cityImg img~p{
+
+.ImgLocation, .ImgLocationA {
+    width: 9.375rem;
+    height: 9.375rem;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25%;
     position: absolute;
-    top: 67%;
-    transform: translateX(7vh);
+    margin-top: -9.3rem;
+    color: white;
     opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
-   
-   transition: all 0.1s linear;
-   text-decoration: none;
-   color: white;
   }
 
-
-
+ 
+  @media only screen and (max-width: 768px) and (min-width: 576px){
   
-  
+    #searchBar{
+    
+        background-image: url("https://media-cdn.tripadvisor.com/media/photo-o/14/10/2e/af/india.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 300px;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    #searchBar input{
+        height: 2rem;
+        width: 50%;
+        padding: 5px;
+        outline: none;
+        border: 1px solid transparent;
+        background-color: #f1f1f1;
+        border-radius: 12px;
+    }
+    
+    
+    #cityImg div, #cityImg{
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        grid-template-columns: 1fr 1fr;
+        
+        padding: 4%;
+       }
+    
+    
+       #cityImg div img, #cityImg div a img{
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        width: 150px;
+        border-radius: 25%;
+       
+        box-shadow: 10px 10px 10px gray; 
+    }
+    #viewMore{
+        text-align: center;
+        padding-bottom: 15%;  
+    }
+    #viewMore a{
+        text-decoration: none;
+        color: black;
+    }
+    .ImgLocation {
+        height: 150px;
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 25%;
+        position: absolute;
+        margin-top: 0%;
+        color: white;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+      }
+      .ImgLocationA{
+        height: 150px;
+        width: 150px;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 25%;
+        position: absolute;
+        margin-top: -9.3rem;
+        color: white;
+        opacity: 0;
+        display: flex;
+        align-content: center;
+        justify-content: center;
+       
+      }
+   } 
   @media only screen and (max-width: 576px) {
     
 #searchBar{
@@ -94,14 +164,12 @@ opacity: 1;
     
 }
 #searchBar input{
-    
     height: 2rem;
     width: 50%;
     padding: 5px;
     outline: none;
     border: 1px solid transparent;
     background-color: #f1f1f1;
-   
     border-radius: 12px;
 }
 
@@ -111,37 +179,50 @@ opacity: 1;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     padding: 4%;
    }
 
-   #cityImg img~p{
-       display: none;
-   }
 
-   #cityImg div img, #cityImg div a img{
-    display: flex;
-    
+#cityImg div img, #cityImg div a img{
+    display: flex;  
     justify-content: center;
     align-items: center;
     height: 150px;
     width: 150px;
     border-radius: 25%;
-    box-shadow: 10px 10px 10px gray;
-  
+    box-shadow: 10px 10px 10px gray; 
 }
-
 #viewMore{
     text-align: center;
-    padding-bottom: 15%;
-   
+    padding-bottom: 15%;  
 }
 #viewMore a{
     text-decoration: none;
     color: black;
 }
-
-
-
+.ImgLocation {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25%;
+    position: absolute;
+    margin-top: 0%;
+    color: white;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ImgLocationA{
+    height: 150px;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 25%;
+    position: absolute;
+    margin-top: -31%;
+    color: white;
+    opacity: 0;
+  
+  }
   }
 

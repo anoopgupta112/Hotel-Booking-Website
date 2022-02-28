@@ -24,38 +24,38 @@
         </header>
         <content>
             <div id="searchBar">
-
                 <input type="search" placeholder="City">
             </div>
             <!-- for image  -->
-            <div class="d-flex justify-content-around" id="cityImg">
+            <div id="cityImg">
                 <div>
                     <a href="list.html">
                         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="d-"
                             id="ContImg1">
-                        <p>Delhi</p>
 
+                        <div class="ImgLocationA">Delhi</div>
                     </a>
-                </div>
 
+                </div>
                 <div>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg" id="ContImg2">
 
-                    <p>Goa</p>
+                    <div class="ImgLocation">Goa</div>
                 </div>
                 <div>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" id="ContImg3">
-                    <p>Agara</p>
+                    <div class="ImgLocation">Hyderabad</div>
                 </div>
                 <div>
                     <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg"
                         id="ContImg4">
-                    <p>Kolkata</p>
+                    <div class="ImgLocation">Kolkata</div>
                 </div>
             </div>
+            <div id="more-div"></div>
             <div id="viewMore">
-                <button type="button" class="btn btn-secondary my-3 mx-3">
-                    <a href="#">View More </a>
+                <button type="button" onclick="viewMore() " class="btn btn-secondary my-3 mx-3">
+                    View More
                 </button>
 
             </div>
@@ -157,6 +157,8 @@
             </div>
         </div>
         <!-- bootstrap js  -->
+        <script src="scripts/common.js"></script>
+        <script src="scripts/index.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </body>
